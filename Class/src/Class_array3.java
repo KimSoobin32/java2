@@ -26,7 +26,8 @@ public class Class_array3 {
 		System.out.println("검색하고자하는 이름을 적어주세요.");
 		String name = s.next();	//사용자가 입력한 데이터
 		mem m = new mem();
-		m.aa(a1, a2, name);
+		m.aa(a1, a2, name);	//매개변수
+		//m.aa(1,2,3) => 인수값(인자값)
 		
 		System.out.println("검색하고자하는 이름을 적어주세요2.");
 		String name2 = s.next();
@@ -39,23 +40,26 @@ public class Class_array3 {
 }
 
 class mem{
+	//메소드 ()안에 값
 	public void aa(String a1[], String a2[], String n) {
 		//System.out.println("test");
 		int w = 0;
 		int al = a1.length;
-		String msg="";
+		//String msg="";
 		boolean ck = false;
 		while(w<al) {
-			if(n.equals(a1[w])) {
-				msg = a1[w]+"님은 "+a2[w]+"점입니다.";
+			if(n.equals(a1[w])) {	//배열에 동일한 값이 있을 경우
+				//msg = a1[w]+"님은 "+a2[w]+"점입니다.";
+				System.out.println(a1[w]+"님은 "+a2[w]+"점입니다.");
 				ck = true;
 			}
 			w++;
 		}
-		if(ck == false) {
-			msg = "해당 멤버 아님.";
+		if(ck == false) {	//main class에서 사용자 검색을 하였을 경우 배열값에 없는 상황
+			//msg = "검색하고자 하는 사용자는 확인이 안됩니다.";
+			System.out.println("검색하고자 하는 사용자는 확인이 안됩니다.");
 		}
-		System.out.println(msg);
+		//System.out.println(msg);
 	}
 }
 

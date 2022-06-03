@@ -21,7 +21,7 @@ public class Class3 {
 		int z = Integer.parseInt(x); //parseInt : int형에 사용하는 산술연산 언어 ,int로 바로 바꿈 - 속도 더 빠름 ,진짜문자(ex) a) 넣으면 에러
 		//int z = Integer.valueOf(x);	//valueOf 클래스 메소드(메소드함수) 안에 parseInt가 포함되어있음
 		//int total = Integer.parseInt(x + x2);	//35156
-		int total = Integer.parseInt(x) + Integer.parseInt(x2);	//문자형을 숫자로 변혼하여 산술계산을 처리
+		int total = Integer.parseInt(x) + Integer.parseInt(x2);	//문자형을 숫자로 변환하여 산술계산을 처리
 		System.out.println(total);
 		
 		//String -> long : Long 사용 시 Long.parseLong 사용 시(10억 단위 초과)
