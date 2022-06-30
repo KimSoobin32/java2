@@ -26,6 +26,7 @@ public class server {
 	 * 
 	 * 
 	 */
+	
 	public static void main(String[] args) {	//java "C:\java6\Net\src\server.java", 지금은 한 서버 한 클라이언트 , 여러명 쓰려면 쓰레드 이용해야 함
 		int port = 9090;
 		ServerSocket ss = null;
